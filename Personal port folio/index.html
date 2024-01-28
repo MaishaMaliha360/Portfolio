@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc0801c8f3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+
+
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+ 
+
+        </nav>
+        <div class="header-text" onclick="event.preventDefault();">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Maisha Maliha</span><br>From Bangladesh</h1>
+        </div>
+
+    </div>
+
+</div>
+<!------------------------------about------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1" onclick="event.preventDefault();">
+                <img src="Images/user.JPG">
+            </div>
+            <div class="about-col-2"  onclick="event.preventDefault();">
+                <h1 class="sub-title">About Me</h1>
+                <p> Welcome to my portfolio website! I'm delighted to have the opportunity to introduce myself as a dedicated software engineer. With a genuine passion for creating innovative solutions, I bring a wealth of experience and expertise to the table. I have successfully developed software solutions for various industries, honing my skills in multiple programming languages and staying ahead of the curve with the latest advancements. Collaboration and effective communication are at the core of my work philosophy, enabling me to thrive in dynamic environments and deliver exceptional results. I'm excited to connect with you and explore how I can contribute to your next project. Let's embark on a journey of innovation together!</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('publication')">Publications</p>
+                    <p class="tab-links" onclick="opentab('project')">Project</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Quality Assurance & Testing</span><br>
+                            1. Test script development.<br>
+                            2. 	Manual testing.<br>
+                            3.	Gathering requirements.<br>
+                            4.	Software testing methodologies<br>
+                            5.	Quality assurance.<br>
+                            6.	Log analysis and troubleshooting.<br>
+                            7.	Root cause analysis.<br>
+                            8.	Collaboration and teamwork.<br>
+                            9.	Test script and diagnostics.<br>
+                            10.	Test plan creation.<br>
+                            11.	Load and stress testing.<br>
+                            12.	Agile development methodologies (Scrum, Kanban).<br>
+                            13.	Test reporting and documentation.<br>
+                            14.	Performance testing (e.g., JMeter, LoadRunner).<br>
+                            15.	Excellent communication and interpersonal skills.<br>
+                            16.	Adaptability and willingness to learn new technologies.</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-09 to 2021-12</span><br>Software Quality Assurance Engineer Intern at Teletalk Bangladesh Limited.</li>
+                        •	Testing Graphical User Interface (GUI), functionality & usability of website or application.<br>
+                        •	Writing test cases for manual testing.<br>
+                        •	Design & maintain test documents.<br>
+                        •	Reviewing requirements, specifications & technical design documents to provide timely and meaningful feedback.<br>
+                        •	Analyze test results.<br>
+                        •	Preparing Gantt chart.
+                    </ul>
+                </div>
+
+
+
+
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2022</span><br>Bachelor of Science: Computer Science and Engineering
+                            American International University Bangladesh<br>
+                            CGPA: 3.5 on the scale of 4.00
+
+                       <li><span>2017</span><br>Higher Secondary School Certificate (Science):
+                        Chandpur Govt. Women College, Chandpur.<br>
+                        GPA: 4.17 on the scale of 5.00
+
+                       <li><span>2015</span><br>Secondary School Certificate (Science):
+                        Matripith Govt. Girls’ High School, Chandpur.<br>
+                        GPA: 5.00 on the scale of 5.00
+                    </ul>
+                </div>
+
+
+                
+<div class="tab-contents" id="publication">
+    <ul>
+        <li>
+            <span>ICCA '22: 2nd International Conference on Computing Advancements</span><br>
+            A review report on the fingerprint-based biometric system in ATM banking.<br>
+            <span class="publication-link" onclick="openLink('https://dl.acm.org/doi/10.1145/3542954.3543029')">Link</span>
+        </li>
+    </ul>
+</div>
+
+
+
+
+                  
+
+
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>java</span><br>Makeup Store Managrment System.</li><br>
+                        <li><span>C#</span><br>Citizen Service Managrment System.</li><br>
+                        <li><span>Graphic Design</span><br>Natural Scenario. <br>Car Racing Game</li><br>
+                        <li><span>Database</span><br>Airport Managrment System</li><br>
+                        <li><span>Web Technology</span><br>Job Portal</li><br>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------services-------------------------------->
+<div id="services" onclick="event.preventDefault();">
+    <div class="container">
+        <h1 class="sub-titles">My Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Quality Assurance & Testing</h2><br>
+            <p>
+                •	Testing Graphical User Interface (GUI), functionality & usability of website or application.<br>
+                •	Writing test cases for manual testing.<br>
+                •	Design & maintain test documents.<br>
+                •	Reviewing requirements, specifications & technical design documents to provide timely   and meaningful feedback.<br>
+                •	Analyze test results.<br>
+                •	Preparing Gantt chart.<br>
+               <!-- <a href="#">Learn more</a>-->  
+            </p>
+           </div> 
+
+
+           <div>
+               <i class="fa-solid fa-crop"></i>
+
+            <h2>Web Development</h2><br>
+            <p>
+                •	Job Portal.<br>
+                •	Citizen Service.<br>
+                •	asdfg hhnmk,,,gg gghjjk  hhjkkl jhgluijli.<br>
+                •	Citfghvk gbjkizen Ser bhbj hbviceh hggvgh.<br>
+                •	Citfghvk gbjkizen Ser bhbj hbviceh hggvgh.<br>
+                •	Citfghvk gbjkizen Ser bhbj hbviceh hggvgh.
+        	
+               <!-- <a href="#">Learn more</a>-->  
+            </p>
+           </div> 
+
+           <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2><br>
+            <p>
+                •	asdfg hhnmk,,,gg gghjjk  hhjkkl jhgluijli.<br>
+                •	Citfghvk gbjkizen Ser bhbj hbviceh hggvgh.<br>
+                •	Citfghvk gbjkizen Ser bhbj hbviceh hggvgh.<br>
+                •	Citfghvk gbjkizen Ser bhbj hbviceh hggvgh.
+               <!-- <a href="#">Learn more</a>-->  
+            </p>
+           </div> 
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-----------------------portfolio----------------------------->
+
+<div id="portfolio" onclick="event.preventDefault();">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer"><br>
+                    <h3>Job Portal</h3><br>
+                    <p>This website help you to search a suitable job for you. 
+                        Dowbload it from play store.</p>
+                        <div class="circle">
+  <i class="fa-solid fa-up-right-from-square" onclick="openLink('https://www.google.com')"></i>
+</div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 2.png">
+                <div class="layer"><br>
+                    <h3>Citizen service</h3><br>
+                    <p>This website help offers benefits such as empowering citizens, 
+                        enhancing civil engagement, efficient public service delivery, 
+                        transparency, collaboration and inclusive access.
+                        Dowbload it from play store.</p>
+                        <div class="circle">
+  <i class="fa-solid fa-up-right-from-square" onclick="openLink('https://www.google.com')"></i>
+</div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 3.png">
+                <div class="layer"><br>
+                    <h3>Online shopping App</h3><br>
+                    <p>This website help you to search product easily with the price,
+                        quantity etc.by using this app people cal save their valuable time. 
+                        Dowbload it from play store.</p>
+                        <div class="circle">
+  <i class="fa-solid fa-up-right-from-square" onclick="openLink('https://www.youtube.com/')"></i>
+</div>
+                </div>
+            </div>
+            
+            
+            
+
+        </div><a class="btn">See more</a></div>
+</div>
+
+
+<!----------------------------------contact------------------------------------>
+
+
+<div id="contact" >
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> +8801748538585</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook" id="facebook-icon"></i>
+                    <i class="fa-brands fa-twitter" id="twitter-icon"></i>
+                    <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+                    <i class="fa-brands fa-linkedin" id="linkedin-icon"></i>
+                </div>
+
+
+
+                <button class="btn btn2" id="downloadBtn">Download CV</button>
+
+
+
+           </div>
+
+            <div class="contact-right">
+                <form id="myForm" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+               <!-- <form id="myForm">
+                     
+                
+                    <button type="submit" class="btn2">Submit</button>
+                </form>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Maisha. Transforming ideas into exceptional software experiences. <i class="fa-solid fa-power-off"></i></p>
+    </div>
+
+</div>
+
+ 
+
+<script>
+    // Get the form element
+    var form = document.getElementById("myForm");
+
+    // Add submit event listener to handle form submission
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Add your form submission logic here
+        // For example, you can use AJAX to submit the form data
+        console.log("Form submitted");
+    });
+</script>
+
+
+<script>
+    // Get the download button element
+    var downloadBtn = document.getElementById("downloadBtn");
+
+    // Add click event listener to trigger the download
+    downloadBtn.addEventListener("click", function() {
+        // Define the file URL
+        var fileUrl = "Images/My%20cv.pdf"; // Replace with the correct file URL
+
+        // Create an anchor element
+        var link = document.createElement("a");
+
+        // Set the anchor element's href and download attributes
+        link.href = fileUrl;
+        link.download = "My_CV.pdf"; // Set the desired filename
+
+        // Append the anchor element to the document body
+        document.body.appendChild(link);
+
+        // Programmatically trigger the click event on the anchor element
+        link.click();
+
+        // Remove the anchor element from the document body
+        document.body.removeChild(link);
+    });
+</script>
+
+
+<script>
+    // Get references to the social media icons
+    var facebookIcon = document.getElementById("facebook-icon");
+    var twitterIcon = document.getElementById("twitter-icon");
+    var instagramIcon = document.getElementById("instagram-icon");
+    var linkedinIcon = document.getElementById("linkedin-icon");
+
+    // Add click event listeners to the icons
+    facebookIcon.addEventListener("click", function() {
+        openLink('https://www.facebook.com/maishaannika.annika/');
+    });
+
+    twitterIcon.addEventListener("click", function() {
+        openLink('https://twitter.com/MaishaM14872186');
+    });
+
+    instagramIcon.addEventListener("click", function() {
+        openLink('https://www.instagram.com/maisha_maliha1999/');
+    });
+
+    linkedinIcon.addEventListener("click", function() {
+        openLink('https://www.linkedin.com/in/maisha-maliha-382a95160/');
+    });
+
+    // Function to open the link in a new tab
+    function openLink(url) {
+        window.open(url, "_blank");
+    }
+</script>
+
+
+
+ <script src="script.js"></script>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        event.preventDefault();
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+        return false;
+    }
+    function closemenu(){
+        sidemenu.style.right = "-150px";
+        return false;
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxoh9p0iXwEMIPKyhwp3KOH91vf4br6BJFgwqj38F0jUfEwiDqWVCKSmuFmnEBxe01s/exec'
+    const myForm = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    /*myForm.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(myForm)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })*/
+   
+
+  myForm.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(myForm)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+                }, 5000) 
+                myForm.reset()
+            })    
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+
+</body>
+</html>
